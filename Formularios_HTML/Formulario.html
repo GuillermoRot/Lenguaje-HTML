@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios HTML 5</title>
+</head>
+<body>
+
+    <h2>Formulario HTML</h2>
+
+    <!-- Elementos de un formulario -->
+
+    <form>
+
+        <!-- Campo de texto -->
+        <label for="txtNombre">Nombre de usuario</label>
+        <br />
+        <input type="text" id="txtNombre" size="40" name="txtNombre" value="" placeholder="Ingresar un nombre" required/>
+        <br />
+        <br />
+
+        <!-- Campo de Contraseña -->
+        <label for="txtPassword">Contraseña</label>
+        <br />
+        <input type="password" id="txtPassword" size="40" name="txtPassword" value="" placeholder="Ingresar la contraseña"/>
+        <br />
+        <br />
+
+        <!-- Campo para los email -->
+        <label for="txtEmail">Dirección de correo electrónico</label>
+        <br />
+        <input type="email" id="txtEmail" size="40" name="txtEmail" value="" placeholder="Ingresar una dirección de correo"/>
+        <br />
+        <br />
+
+        <!-- Campo de ocultos -->
+        <br />
+        <input type="hidden" id="txtOculto" size="40" name="txtOculto" value="" placeholder="Dato oculto"/>
+        <br />
+
+        <!-- Campo CheckBox -->
+        <label for="check">Desea guardar los datos de configuración</label>
+        <br />
+        <input type="checkbox" id="check" name="check"/><label for="r1">Guardar</label>
+        <br />
+        <br />
+
+        <!-- Campo Radio -->
+        <label for="radio">Eliga una opción</label>
+        <br />
+        <input type="radio" required name="driver" id="r1" value="yes"><label for="r1">Verdadero</label>
+        <input type="radio" required name="driver" id="r2" value="no"><label for="r2">False</label>
+        <br />
+        <br />
+
+        <!-- Campo de Lista seleccionable -->
+        <label for="radio">Eliga una opción</label>
+        <br />
+        <select name="nombre" multiple="multiple"> 
+            <option>Plátano</option> 
+            <option>Cereza</option> 
+            <option>Manzana</option> 
+            <option>Fresa</option> 
+            <option>Limón</option> 
+        </select>
+
+        <!-- Campo con ComboBox -->
+        <br />
+        <p>
+            <label for="t1">¿Cuál es tu fruta favorita?<abbr title="Este campo es obligatorio" aria-label="required">*</abbr></label>
+            <br />
+            <input type="text" id="t1" name="fruit" list="l1" required pattern="[Bb]anana|[Cc]herry|[Aa]pple|[Ss]trawberry|[Ll]emon|[Oo]range">
+            <datalist id="l1">
+                <option>Plátano</option>
+                <option>Cereza</option>
+                <option>Manzana</option>
+                <option>Fresa</option>
+                <option>Limón</option>
+                <option>Naranja</option>
+            </datalist>
+        </p>
+        <br />
+        <br />
+
+        <!-- Campo de TextArea -->
+        <label for="txtArea">Observaciones</label>
+        <br />
+        <textarea rows="10" cols="30" name="txtArea"></textarea>
+        <br />
+        <br />
+
+        <!-- Campo de Fecha -->
+        <label for="fecha">Fecha</label>
+        <br />
+        <input type="date" name="fecha">
+        <br />
+        <br />
+
+        <!-- Botones en los formularios -->
+        <input type="button" value="Botón normal"/>
+
+        <!-- Cuando queremos enviar los datos a un servidor utilizamos el boton submit-->
+        <input type="submit" value="Botón de envio de datos ingresados al servidor"/>
+
+    </form>
+    
+</body>
+</html>
