@@ -1,0 +1,20 @@
+/*
+    La propiedad z-index es utilizada para definir que elemento se muestra primero, pensemos pila de libros
+    el primer libro tendra el valor 1, y el ultimo libro de la pila tendra por ejemplo el valor 5. Entonces tenemos
+    5 libros apilados pero el primero que se ve es el ultimo. Por lo cual, la propiedad z+index permite definir 
+    la posicion de los elementos. 
+
+    Pueden intercambiar el valor de los z-index para ver los cambios.
+
+*/
+img{
+    position: absolute;
+}
+
+#img_01 {
+    z-index: 1;
+}
+
+#img_02 {
+    z-index: 2;
+}

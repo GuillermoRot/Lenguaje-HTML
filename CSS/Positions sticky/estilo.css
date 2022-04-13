@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.encabezado{
+
+    background-color: cadetblue;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navegacion{
+
+    background-color: coral;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px 20px 0px;
+    position: sticky;
+    top: 0px;
+
+}
+
+.navegacion ul{
+    list-style: none;
+    display: flex;
+}
+
+.navegacion ul li{
+    color: white;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.box{
+    background-color: cornflowerblue;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px 20px 0px;
+}

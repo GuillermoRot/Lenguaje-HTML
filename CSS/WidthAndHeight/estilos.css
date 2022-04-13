@@ -1,0 +1,18 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.capa {
+    width:100vw;
+    height:100vh;
+    line-height:100vh;
+    color:#ffffff;
+    text-align:center; 
+    font-size:3em;
+}
+#capa1{
+    background-color: darkorange;
+}
+#capa2{
+    background-color: darkorchid;
+}
