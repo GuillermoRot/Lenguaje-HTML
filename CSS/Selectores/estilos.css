@@ -1,0 +1,65 @@
+/*
+* Se define un selector de elemento,
+* Se aplica el estilo a todas las etiquetas h1 del documento
+*/
+h1{
+    color: green;
+}
+
+/*
+* Se define un selector de clase
+* Se aplica el estilo a todos los elementos que tengan la clase
+*/
+.box{
+    width: 150px;
+    height: 50px;
+    background-color: blue;
+    margin: 10px;
+}
+
+/*
+* Se define un selector de ID
+* Se aplica el estilo a todos los elementos que tengan el ID
+*/
+#boxID{
+    width: 150px;
+    height: 50px;
+    background-color: goldenrod;
+    margin: 10px;
+}
+
+/*
+* Se define un selector de elemento + ID
+* Se aplica el estilo a todos los elementos definidos que 
+* ademas lleven el ID
+*/
+p#danger{
+    color: red;
+}
+
+/*
+* Se define un selector de elemento + clase
+* Se aplica el estilo a todos los elementos definidos que 
+* ademas lleven la clase
+*/
+p.warning{
+    color: orange;
+}
+
+/*
+* Se define un selector de ruta
+* Se aplica el estilo al ultimo elemento de la ruta
+*/
+
+ul li{
+    color: blue;
+}
+
+/*
+* Se definen selectores agrupados
+* Se aplica el estilo a todos los elementos que se agrupan
+*/
+
+h3, h4, h5{
+    color: blueviolet;
+}

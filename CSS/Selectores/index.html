@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores CSS</title>
+
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    
+    <!-- Selector de elemento -->
+    <!-- cuando se define un selector por elemento, se aplica el estilo definido en CSS
+        para todos los elementos -->
+    
+    <h1> Texto H1 </h1>
+    <h1> Texto H2 </h1>
+
+    <!-- Selector de clase -->
+    <!-- cuando se define un selector por clase, se aplica el estilo definido en CSS
+        para todos los elementos que tengan la clase css -->
+    
+    <div class="box">
+        <span>Texto del div</span>
+    </div>
+
+    <!-- Selector de id -->
+    <!-- cuando se define un selector por id, se aplica el estilo definido en CSS
+        para todos los elementos que tengan el id css -->
+
+    <div id="boxID">
+        <span>Texto del div</span>
+    </div>
+
+    <!-- Selector de elemento + ID -->
+    <!-- cuando se define un selector por elemento + ID, se aplica el estilo definido en CSS
+        para todos los elementos que coincidan con elemento y ademas tengan el ID css -->
+
+        <p>Texto Sin Estilo</p>
+
+        <p id="danger">Texto Con Estilo</p>
+
+        <h2 id="danger">Texto H2 con el id danger pero no aplica</h2>
+
+    <!-- Selector de elemento + clase -->
+    <!-- cuando se define un selector por elemento + Clase, se aplica el estilo definido en CSS
+        para todos los elementos coincidan con elemento y ademas tengan la clase css -->
+
+        <p>Texto Sin Estilo</p>
+
+        <p class="warning">Texto Con Estilo</p>
+
+        <h2 class="warning">Texto H2 con la clase warning pero no aplica</h2>
+
+    <!-- Selector de ruta -->
+    <!-- cuando se define un selector de ruta, se aplica el estilo definido en CSS
+        para el ultimo elemento de la ruta -->
+
+        <ul>
+            <li>Valor Uno</li>
+            <li>Valor dos</li>
+            <li>Valor Tres</li>
+        </ul>
+
+    <!-- Selectores de ruta -->
+    <!-- cuando se definen selectores agrupados, se aplica el estilo definido en CSS
+        a todos los elementos agrupados -->
+
+        <h3>Texto H3</h3>
+        <h4>Texto H4</h4>
+        <h5>Texto H5</h5>
+
+</body>
+</html>
