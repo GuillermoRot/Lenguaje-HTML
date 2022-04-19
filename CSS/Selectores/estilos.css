@@ -53,6 +53,8 @@ p.warning{
 
 ul li{
     color: blue;
+    text-decoration: none;
+    list-style: none; /* Para sacar los puntos de la lista */
 }
 
 /*
