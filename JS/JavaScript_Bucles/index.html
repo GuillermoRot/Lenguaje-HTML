@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="contenedor">
+        <h3>Lista de datos generado desde JavaScript</h3>
+        <ul id="lista">
+
+        </ul>
+
+        <ul id="lista2">
+
+        </ul>
+    </div>
+
+    <button onclick="generateListByWhile()">Generar lista desde un While</button>
+    <button onclick="generateListByFor()">Generar lista desde un for</button>
+
+    <script>
+
+        const VALOR_CERO = 0;
+
+        //Lista generada a partir de un while
+        function generateListByWhile(){
+
+            const lista = document.getElementById("lista");
+
+            let i = 0;
+            while(i < 10){
+
+                const item = document.createElement("li");
+                const contElem = document.createTextNode("Dato: " + i);
+                item.appendChild(contElem);
+                lista.appendChild(item);
+                i++;
+
+            }
+
+        }  
+
+        //Lista generada desde un Bucle for
+        function generateListByFor(){
+            const lista = document.getElementById("lista2");
+
+            for(let j = 0; j < 10; j++){
+                const item = document.createElement("li");
+                const contElem = document.createTextNode("Dato: " + j);
+                item.appendChild(contElem);
+                lista.appendChild(item);
+            }
+
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h1>Información de la página</h1>
+    <p id="texto">Texto a modificar</p>
+    <button onclick="changeText()">Click Me!!!</button>
+
+    <script>
+
+        function changeText(){
+
+            //Se recupera un elemento y se almacena en una variable.
+            const data = document.getElementById("texto");
+
+            //Modificamos el contenido de la etiqueta p
+            data.innerHTML = "Texto modificado";
+        }
+
+    </script>
+
+</body>
+</html>

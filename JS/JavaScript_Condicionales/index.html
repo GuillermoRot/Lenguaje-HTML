@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Condicionales</title>
+</head>
+<body>
+
+    <form>
+        <label for="txt_numero">Ingresar un valor númerico</label>
+        <input type="number" name="txt_numero" id="txt_Numero">
+        <br />
+        <br />
+    </form>
+    <h2 id="Resultado"></h2>
+    <button onclick="onCheckNumber()">Verificar</button>
+
+    <script>
+
+        function onCheckNumber(){  
+
+            const resultado = document.getElementById("Resultado");
+
+            //Primero obtenemos el valor ingresado en la caja de texto
+            let valor = parseInt(document.getElementById("txt_Numero").value);
+
+            //Verificar si el valor ingresado es mayor a 20
+            //Mostrar por pantalla el resultado
+            if(valor > 20){
+                resultado.innerHTML = "El valor ingresado es correcto";
+            }else{
+                resultado.innerHTML = "El valor ingresado no es mayor que 20";
+            }
+        }
+
+    </script>
+
+</body>
+</html>

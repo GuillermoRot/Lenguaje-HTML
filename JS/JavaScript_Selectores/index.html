@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores en JavaScript</title>
+</head>
+<body>
+
+    <h1 id="texto">Hola, estamos usuando JavaScript</h1>
+
+    <h1 name="etiqueta_1">Etiqueta 1</h1>
+    <h2 name="etiqueta_1">Etiqueta 2</h2>
+
+    <p class="dato_1">Parrafo 1</p>
+
+    <p id="T_H1">Cantidad de elementos h1</p>
+
+    <script>
+
+        //Para seleccionar un unico elemento HTML, debemos hacerlo mediante el ID del mismo.
+        //Por ejemplo
+        //Para seleccionar la etiqueta H1 con id "texto" debemos utilizar "getElementById".
+        document.getElementById("texto");
+
+        //Cuando seleccionamos los elementos por nombre, obtenemos un conjunto de elementos que contienen ese nombre.
+        //Para acceder a cada uno de ellos, debemos indicar la posición.
+        //Por ejemplo: Para acceder a la etiqueta 1 debemos indicar la posición 0.
+        document.getElementsByName("etiqueta_1")[0].style.backgroundColor = "blue";
+
+
+        //Podemos seleccionar elementos mediante la clase.
+        //De igual manera como la seleccion por Name, al obtener elementos por su clase obtenemos un conjunto de elementos
+        //que tienen esa clase.
+        //Para acceder a un elemento en particular debemos indicar la posición.
+        document.getElementsByClassName("dato_1")[0].innerHTML = "Texto modificado desde JavaScript";
+
+        let valores = document.getElementsByTagName("h1");
+        let elementoByname = document.getElementsByName("etiqueta_1");
+
+        let valor = "Hola Mundo";
+
+        console.log(`Elementos by name ${valor}`);
+
+        document.getElementById("T_H1").innerHTML = valores.length;
+
+    </script>
+    
+</body>
+</html>
