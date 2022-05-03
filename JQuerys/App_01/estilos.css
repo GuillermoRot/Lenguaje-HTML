@@ -1,0 +1,20 @@
+*{
+    margin: 0px;
+}
+.navegacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+    height: 80px;
+}
+
+.navegacion ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navegacion ul li{
+    margin: 20px;
+}
