@@ -1,12 +1,14 @@
 $(document).ready(() => {
 
-    $("#btnCambiar").on("click", () => {
+    $("#linkHome").on("click", () => {
         
-        $("#H_1").html("Valor Cambiado...");
+        $.get("Home.html", (response) => {
+            $("#contenedor").html(response);
+        });
 
     });
 
-    $("#btnChangePage").on("click", () => {
+    $("#linkAbout").on("click", () => {
         
         $.get("About.html", (data) => {
             $("#contenedor").html(data);
