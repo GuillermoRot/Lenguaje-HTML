@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+}
+.navegacion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+    height: 80px;
+}
+
+.navegacion ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navegacion ul li{
+    list-style: none;
+    margin: 20px;
+}
+
+.navegacion ul li a {
+    text-decoration: none;
+}
+
+.contenedorformUno {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formUno {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.txt {
+    margin-top: 10px;
+}

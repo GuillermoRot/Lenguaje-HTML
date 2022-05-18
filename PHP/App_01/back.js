@@ -10,7 +10,7 @@ $(document).ready(() => {
             success: (response) => {
                 const data = JSON.parse(response);
                 console.log(data);
-                $("#Resultado").html(data.user.nombre + data.user.apellido);
+                $("#Resultado").html(data.user.nombre + data.user.apellido + data.user.fruit);
             }
 
         });

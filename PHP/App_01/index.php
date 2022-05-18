@@ -13,7 +13,17 @@
     <form action="server.php" method="POST" id="form">
         <input type="text" name="Nombre" id="txtNombre">
         <input type="text" name="Apellido">
-        <br>
+        <br />
+        <input type="text" id="t1" name="fruit" list="l1">
+        <datalist id="l1">
+            <option>Plátano</option>
+            <option>Cereza</option>
+            <option>Manzana</option>
+            <option>Fresa</option>
+            <option>Limón</option>
+            <option>Naranja</option>
+        </datalist>
+        <br />
         <input type="submit" value="Guardar Datos">
     </form>
 
