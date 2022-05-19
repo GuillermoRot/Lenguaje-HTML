@@ -1,5 +1,9 @@
 $(document).ready(() => {
 
+    $("#btnHome").on("click", () => {
+        onVolverHome();
+    });
+
     $("#formulario").on("submit", () => {
         
         var msgElement = $("#Resultado");
@@ -31,3 +35,9 @@ $(document).ready(() => {
     });
 
 });
+
+
+const onVolverHome = () => {
+    //Para redireccionar al home
+    window.location.href = "../views/index.html";
+}

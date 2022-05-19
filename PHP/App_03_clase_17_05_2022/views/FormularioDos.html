@@ -8,7 +8,31 @@
 </head>
 <body>
     
-    <h1>Desarrollar otro formulario</h1>
+    <h1>Formulario de operaciones</h1>
+
+    <form id="formulario">
+        
+        <input type="number" name="numberUno" placeholder="Ingresar un valor">
+        <br />
+        <input type="number" name="numberDos" placeholder="Ingresar un Valor">
+        <br />
+        <br />
+        <input type="text" id="t1" name="operaciones" list="l1">
+        <datalist id="l1">
+            <option>Sumar</option>
+            <option>Restar</option>
+            <option>Multiplicar</option>
+            <option>Dividir</option>
+        </datalist>
+        <br />
+        <input type="submit" value="Realizar operacion" id="btnCalcular">
+
+    </form>
+
+    <h3 id="resultado"></h3>
+
+    <script src="../JS/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <script src="../Controllers/Logic_FormDos.js" type="text/javascript"></script>
 
 </body>
 </html>
