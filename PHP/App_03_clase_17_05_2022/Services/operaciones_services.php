@@ -9,6 +9,18 @@
         $resultado = $valorUno + $valorDos;
     }
 
+    if($Operacion == "Restar"){
+        $resultado = $valorUno - $valorDos;
+    }
+
+    if($Operacion == "Multiplicar"){
+        $resultado = $valorUno * $valorDos;
+    }
+
+    if($Operacion == "Dividir"){
+        $resultado = $valorUno / $valorDos;
+    }
+
     $data = array(
         'resultado' => $resultado,
         'operacion' => $Operacion

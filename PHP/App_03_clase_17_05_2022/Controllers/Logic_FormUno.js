@@ -1,7 +1,11 @@
 $(document).ready(() => {
 
-    $("#btnHome").on("click", () => {
+    $("#btnHome").click(() => {
         onVolverHome();
+    });
+
+    $("#btnAnimar").click(() => {
+        $("#formAnimated").animate({left: '250px'});
     });
 
     $("#formulario").on("submit", () => {
@@ -26,6 +30,9 @@ $(document).ready(() => {
             complete: () => {
                 btnEnviar.removeAttr("disabled");
                 $("#formulario").trigger("reset");
+            },
+            error:() => {
+
             }
             
         });
@@ -34,10 +41,8 @@ $(document).ready(() => {
 
     });
 
+    const onVolverHome = () => {
+        window.location.href = "../views/index.html";
+    }
+    
 });
-
-
-const onVolverHome = () => {
-    //Para redireccionar al home
-    window.location.href = "../views/index.html";
-}

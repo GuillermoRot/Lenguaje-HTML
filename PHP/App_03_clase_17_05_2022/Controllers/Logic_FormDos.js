@@ -13,6 +13,9 @@ $(document).ready(() => {
             success: (respuesta) => {
                 const data = JSON.parse(respuesta);
                 $("#resultado").html("La operacion realizada es: " + data.operacion.operacion + " y el resultado es: " +  data.operacion.resultado);
+            },
+            error: (response) => {
+                console.log("Datos de error__::", response);
             }
 
         });
