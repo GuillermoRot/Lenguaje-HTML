@@ -13,6 +13,10 @@ $(document).ready(() => {
         onCargarFormularioDos();
     });
 
+    $("#linkPersonas").click(() => {
+        onCargarPersonas();
+    });
+
     onCargarFormularioUno();
 
 });
@@ -26,6 +30,12 @@ const onCargarFormularioUno = () => {
 
 const onCargarFormularioDos = () => {
     $.get("../views/FormularioDos.html", (response) => {
+        $("#contenedor").html(response);
+    });
+}
+
+const onCargarPersonas = () => {
+    $.get("../views/ViewPersonas/tablaPersonas.html", (response) => {
         $("#contenedor").html(response);
     });
 }
