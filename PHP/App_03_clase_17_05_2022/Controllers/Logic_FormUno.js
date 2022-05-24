@@ -1,5 +1,8 @@
 $(document).ready(() => {
 
+    const urlSrvice = "../Services/persona_service.php";
+    const methodForm = "POST";
+
     $("#btnHome").click(() => {
         onVolverHome();
     });
@@ -15,24 +18,24 @@ $(document).ready(() => {
 
         $.ajax({
 
-            url: $("#formulario").attr("action"),
-            type: $("#formulario").attr("method"),
+            url: urlSrvice,
+            type: methodForm,
             data: $("#formulario").serialize(),
             
             beforeSend: () => {
-                msgElement.html("Enviando los datos");
+                msgElement.html("Enviando los datos"); 
                 btnEnviar.attr("disabled","disabled");
             },
             success: (response) => {
                 const datos = JSON.parse(response);
-                msgElement.html(datos.user.usuario + " " + datos.user.password);
+                msgElement.html("El resultado es: " + datos.user.usuario + " " + datos.user.password);
             },
             complete: () => {
                 btnEnviar.removeAttr("disabled");
                 $("#formulario").trigger("reset");
             },
             error:() => {
-
+                msgElement.html("El servidor tiene problemas");
             }
             
         });
