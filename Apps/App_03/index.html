@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="contenedor">
+
+        <!-- Panel Top --->
+        <div class="pnl_top">
+            <nav>
+                <ul class="menu">
+                    <li class="item_menu" onclick="loadPagina()" on><a>Productos</a></li>
+                    <li class="item_menu"><a>Categorias</a></li>
+                    <li class="item_menu"><a>Catalogos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Panel Bottom --->
+        <div class="pnl_bottom" id="main_content">Panel Bottom</div>
+
+        <button id="btn" onclick="loadData()">Click Me!!</button>
+
+        <ul id="lista">
+            
+        </ul>
+
+    </div>
+
+    <script>
+
+        const requestData = async () => {
+            return fetch('http://localhost:8090/api/migraciones/test/')
+                .then(response => response.json()) 
+                .then(json => {
+                    return json;
+                });
+        }
+
+        const loadData = async () => {
+            const data = await requestData();
+            const elementList = document.getElementById("lista");
+            data.response.forEach(element => {
+                const nodeText = document.createTextNode(element);
+                const li = document.createElement("li");
+                li.appendChild(nodeText);
+                elementList.appendChild(li);
+            });
+        }
+
+        function loadPagina(){
+            document.getElementById("main_content").innerHTML = "<object type='text/html' data='pagina.html'></object>"
+        }
+
+    </script>
+</body>
+</html>

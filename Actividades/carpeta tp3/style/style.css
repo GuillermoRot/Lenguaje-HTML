@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+     --aqua-color: aqua;
+     --white-color: white;
+
+}
+
+.navegacion{
+    background-color: var(--aqua-color);
+    height: 80px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.text-white{
+     color: var(--white-color);
+
+}
+
+ul li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+
+}
+
+.form-content{
+   display: flex;
+}
+
+.mt-1{
+  margin-top: 10px;
+}
+
+.mt-2{
+    margin-top: 20px;
+}
+
+.Resultados{
+    margin-left: 20px;
+    flex-grow: 1;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/estilo.css">
+</head>
+<body>
+    
+    <div class="form-contenedor">
+        <div class="form-contenedor__formulario">
+            <h2>Formulario</h2>
+            <form class="form-contenedor_form" action="../services/service.php" method="POST" id="form">
+                <label for="name">Ingresar Nombre</label>
+                <input class="mt-1" type="text" name="name">
+                <label class="mt-1" for="name">Ingresar Apellido</label>
+                <input class="mt-1" type="text" name="lastName">
+                <button class="mt-2" type="submit">Guardar</button>
+            </form>
+        </div>
+        <div class="form-contenedor__result">
+            <h2>Resultado Esperado</h2>
+            <span id="rest"></span>
+        </div>
+    </div>
+
+    <script src="../logic/jquery-3.6.0.min.js"></script>
+    <script src="../logic/logicform.js"></script>
+</body>
+</html>
